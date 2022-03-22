@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bea's Website Portfolio</title>
+  <!-- Bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+      <!-- navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-b.svg" alt="Bea's logo">
+        </a>
+        <!-- toggle when mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#title">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- title area -->
+      <div class="title-container">
+        <div class="row title-area">
+          <div class="col-lg-6 col-md-6 title">
+            <h1 class="title-text"><span class="smaller-title">Hello! I'm Bea Lasam.</span><br>A Digital<br>Designer</h1>
+            <a class="green-button" href="#works">LEARN MORE</a>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <img class="display-image" src="images/image-title@2x.png" alt="display-image">
+          </div>
+        </div>
+
+        <div class="shapes">
+          <img class="circle" src="images/circle.svg" alt="circle">
+          <img class="triangle" src="images/triangle.svg" alt="triangle">
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- works -->
+  <section id="works">
+    <div class="container-fluid">
+      <h2 class="section-header"><img class="line-icon" src="images/line-title.svg" alt="line-icon">HERE'S WHAT I DO</h2>
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" id="web-tab" data-bs-toggle="tab" href="#web"><span>Web Design</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#app"><span>App Design</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#graphic"><span>Graphic Design</span></a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="web">
+          <div class="row works-row">
+            <div class="col-lg-4 col-md-6 col-sm-6 work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-mc@2x.jpg" alt="Momentum Connect">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-sotheycan@2x.jpg" alt="SoTheyCan">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-ta@2x.jpg" alt="The Adviser">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-ai@2x.jpg" alt="AiPayGo">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-reb@2x.jpg" alt="REB">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-rep@2x.jpg" alt="Republisys">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="app">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-AA@2x.jpg" alt="Australian Aviation">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-hc@2x.jpg" alt="Hunger Crush">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-pp@2x.jpg" alt="PhonePera">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="graphic">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-duru@2x.jpg" alt="Duru">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-hclogo@2x.jpg" alt="Hunger Crush Logo">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6  work-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#">
+                <img class="img-fluid" src="images/thumb-act@2x.jpg" alt="Activex">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container-fluid">
+      <h2 class="section-header"><img class="line-icon" src="images/line-title.svg" alt="line-icon">ABOUT ME</h2>
+      <div class="row about me">
+        <div class="col-lg-4 col-md-3">
+          <img class="about-image" src="images/about-image@2x.jpg" alt="about-image">
+        </div>
+        <div class="col-lg-8 col-md-8 about-description">
+          <h3 class="about-heading">Nice to meet you! You can call me Bea.</h3>
+          <p>I’m a Manila based designer with 7 years experience in both print and digital. I received my bachelor’s degree in Advertising Arts (cum laude) from the University of Santo Tomas.</p>
+          <p>After graduating, I worked as a graphic designer for a retail company where I design products for crafting and it’s packaging. In 2016, I decided to study website development where I learned the basics of HTML and CSS. After that, my
+            career
+            shifted from being a graphic designer to a full-time web designer. Throughout the years, I became interested more in studying UI/UX design and was also involved in several projects of web and app design.</p>
+          <p>Currently, I’m a full-time web designer for an Australian media company, and is also a freelance graphic designer (and sometimes, a baker too!). </p>
+        </div>
+      </div>
+      <div class="row timeline">
+        <div class="col-lg-3 box-1">
+          <div class="box">
+            <h5 class="date">2015</h5>
+            <h4 class="job-title">Graphic designer & Product Planner</h4>
+            <p class="company">at Filstar Distributors Corp.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 box-2">
+          <div class="box">
+            <h5 class="date">2017</h5>
+            <h4 class="job-title">Multimedia Designer</h4>
+            <p class="company">Digital 2wist Inc & Amplified eSolutions</p>
+          </div>
+        </div>
+        <div class="col-lg-3 box-3">
+          <div class="box">
+            <h5 class="date">2018</h5>
+            <h4 class="job-title">Web Designer & Head of Creatives</h4>
+            <p class="company">AiPayGo Inc.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 box-4">
+          <div class="box">
+            <h5 class="date">2020-Present</h5>
+            <h4 class="job-title">Digital Designer</h4>
+            <p class="company">Momentum Media Australia</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <h2 class="section-header"><img class="line-icon" src="images/line-title.svg" alt="line-icon">WHAT I USE FOR DESIGNING</h2>
+      <div class="skills-container">
+        <div class="skills">
+          <p class="skills-list">ADOBE PHOTOSHOP</p>
+        </div>
+        <div class="skills">
+          <p class="skills-list">ADOBE ILLUSTRATOR</p>
+        </div>
+        <div class="skills">
+          <p class="skills-list">ADOBE XD</p>
+        </div>
+        <div class="skills">
+          <p class="skills-list">ADOBE INDESIGN</p>
+        </div>
+        <div class="skills">
+          <p class="skills-list">MAC OS USER</p>
+        </div>
+      </div>
+
+      <!-- download cv -->
+      <p>Want to know more? Download my CV</p>
+    </div>
+  </section>
+
+  <!-- contact us -->
+  <section id="contact">
+    <div class="contact-area">
+      <h1 class="medium-title">Hope you like it!</h1>
+      <p>Want to collaborate? Or hire me? Let’s get in touch!</p>
+
+      <form class="contact-form">
+        <input class="form-control form-control-lg contact-field" type="text" placeholder="Name*">
+        <input class="form-control form-control-lg contact-field" type="email" placeholder="Email Address*">
+        <textarea class="form-control form-control-lg contact-field" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message...*"></textarea>
+        <button type="submit" class="btn btn-primary green-button" name="submit">SUBMIT NOW</button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+      <p class="copyright-text">Copyright© 2022 Beatrice Lasam Portfolio</p>
+    </footer>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
