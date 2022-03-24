@@ -1,0 +1,141 @@
+<?php
+if($_POST["message"]) {
+mail("beatrice.lasam@gmail.com", "Website Portfolio Contact Form",
+$_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
+}
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bea's Website Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/7faac037ac.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- navbar -->
+  <section id="title-inside">
+    <div class="container-fluid">
+      <!-- navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo-b.svg" alt="Bea's logo">
+        </a>
+        <!-- toggle when mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html#works">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <section id="works-content">
+    <div class="works">
+      <!-- back button -->
+      <a class="back" href="index.html">
+        <p><i class="fa-solid fa-angle-left"></i> HOME</p>
+      </a>
+
+      <!-- start of portfolio -->
+      <div class="project-title">
+        <h1>Project Title</h1>
+        <h2 class="section-header">Short description</h2>
+      </div>
+      <!-- image 1 -->
+      <div class="work-placeholder">
+        <img class="img-fluid" src="images/mc-1.jpg" alt="mc-cover">
+      </div>
+      <div class="container">
+        <p class="p-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+      </div>
+      <div class="row work-placeholder">
+        <div class="col-md-6 work-item">
+          <img class="img-fluid" src="images/mc-1.jpg" alt="mc-cover">
+        </div>
+        <div class="col-md-6 work-item">
+          <img class="img-fluid" src="images/mc-1.jpg" alt="mc-cover">
+        </div>
+        <div class="col-md-6 work-item">
+          <img class="img-fluid" src="images/mc-1.jpg" alt="mc-cover">
+        </div>
+        <div class="col-md-6 work-item">
+          <img class="img-fluid" src="images/mc-1.jpg" alt="mc-cover">
+        </div>
+      </div>
+      <div class="container">
+        <p class="p-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+      </div>
+      <div class="tags-container">
+        <hr>
+        <div class="tags">
+          <div class="skills">
+            <p class="skills-list">Web Design</p>
+          </div>
+          <div class="skills">
+            <p class="skills-list">Adobe XD</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <!-- next page area -->
+    <div class="next-page-area">
+      <a href="#"><h4 class="section-header">Next Page <i class="fa-solid fa-arrow-right"></i></h4></a>
+      <p>Name of Next Page</p>
+    </div>
+
+  </section>
+
+  <!-- contact us -->
+  <section id="contact">
+    <div class="contact-area">
+      <h1 class="medium-title">Hope you like it!</h1>
+      <p>Want to collaborate? Or hire me? Let’s get in touch!</p>
+
+      <form class="contact-form">
+        <input class="form-control form-control-lg contact-field" type="text" placeholder="Name*">
+        <input class="form-control form-control-lg contact-field" type="email" placeholder="Email Address*">
+        <textarea class="form-control form-control-lg contact-field" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message...*"></textarea>
+        <button type="submit" class="btn btn-primary green-button" name="submit">SUBMIT NOW</button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+      <p class="copyright-text">Copyright© 2022 Beatrice Lasam Portfolio</p>
+    </footer>
+  </section>
+</body>
+
+</html>
