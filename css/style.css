@@ -170,6 +170,28 @@ p {
   border: 1px solid #fff;
   color: #282828;
 }
+#works .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+#works .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(224, 130, 72, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+#works .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+.plus {
+  color: #fff;
+}
 /* contact */
 #contact {
   text-align: center;
