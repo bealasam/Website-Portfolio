@@ -1,8 +1,26 @@
 <?php
-if($_POST["message"]) {
-mail("beatrice.lasam@gmail.com", "Website Portfolio Contact Form",
-$_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
-}
+  $message_sent = false;
+  if(isset($_POST['email']) && $_POST['email'] != ''){
+
+    if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
+      //submit the form
+        $userName = $_POST['name'];
+        $userEmail = $_POST['email'];
+        $message = $_POST['message'];
+
+        $to = "beatrice.lasam@gmail.com"
+        $subject = "Website Portfolio Contact Form"
+        $body = "";
+
+        $body .= "From: ".$userName. "\r\n";
+        $body .= "Email: ".$userEmail. "\r\n";
+        $body .= "Message: ".$message. "\r\n";
+
+        mail($to,$body);
+
+        $message_sent = true;
+    }
+  }
 ?>
 <html lang="en" dir="ltr">
 
@@ -108,7 +126,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-mc@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-mc@2x.jpg" alt="Momentum Connect Website">
                 </a>
               </div>
             </div>
@@ -120,7 +138,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-sotheycan@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-sotheycan@2x.jpg" alt="SoTheyCan Website">
                 </a>
               </div>
             </div>
@@ -132,7 +150,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-ta@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-ta@2x.jpg" alt="The Adviser Website">
                 </a>
               </div>
             </div>
@@ -144,7 +162,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-ai@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-ai@2x.jpg" alt="AiPayGo Website">
                 </a>
               </div>
             </div>
@@ -156,7 +174,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-reb@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-reb@2x.jpg" alt="REB Website">
                 </a>
               </div>
             </div>
@@ -168,7 +186,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-rep@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-rep@2x.jpg" alt="Republisys Website">
                 </a>
               </div>
             </div>
@@ -184,7 +202,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-AA@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-AA@2x.jpg" alt="Australian Aviation App">
                 </a>
               </div>
             </div>
@@ -196,7 +214,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-hc@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-hc@2x.jpg" alt="Hunger Crush App">
                 </a>
               </div>
             </div>
@@ -208,7 +226,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-pp@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-pp@2x.jpg" alt="PhonePera">
                 </a>
               </div>
             </div>
@@ -224,7 +242,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-duru@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-duru@2x.jpg" alt="Duru">
                 </a>
               </div>
             </div>
@@ -236,7 +254,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-hclogo@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-hclogo@2x.jpg" alt="Hunger Crush Logo">
                 </a>
               </div>
             </div>
@@ -248,7 +266,7 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
                       <i class="fas fa-plus fa-3x plus"></i>
                     </div>
                   </div>
-                  <img class="img-fluid" src="images/thumb-act@2x.jpg" alt="Momentum Connect">
+                  <img class="img-fluid" src="images/thumb-act@2x.jpg" alt="Activex">
                 </a>
               </div>
             </div>
@@ -331,15 +349,16 @@ $_POST["insert your message here"]. "From: beatrice.lasam@gmail.com");
   </section>
 
   <!-- contact us -->
+    <h3></h3>
   <section id="contact">
     <div class="contact-area">
       <h1 class="medium-title">Hope you like it!</h1>
       <p>Want to collaborate? Or hire me? Let’s get in touch!</p>
 
-      <form class="contact-form">
-        <input class="form-control form-control-lg contact-field" type="text" placeholder="Name*">
-        <input class="form-control form-control-lg contact-field" type="email" placeholder="Email Address*">
-        <textarea class="form-control form-control-lg contact-field" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message...*"></textarea>
+      <form action="index.html" method="POST" class="contact-form">
+        <input class="form-control form-control-lg contact-field" type="text" placeholder="Name*" name="name" tabindex="1" required>
+        <input class="form-control form-control-lg contact-field" type="email" placeholder="Email Address*" name="email" tabindex="2" required>
+        <textarea class="form-control form-control-lg contact-field" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message...*" name="message" tabindex="3" required></textarea>
         <button type="submit" class="btn btn-primary green-button" name="submit">SUBMIT NOW</button>
       </form>
     </div>
