@@ -1,27 +1,4 @@
-<?php
-  $message_sent = false;
-  if(isset($_POST['email']) && $_POST['email'] != ''){
 
-    if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ) {
-      //submit the form
-        $userName = $_POST['name'];
-        $userEmail = $_POST['email'];
-        $message = $_POST['message'];
-
-        $to = "beatrice.lasam@gmail.com"
-        $subject = "Website Portfolio Contact Form"
-        $body = "";
-
-        $body .= "From: ".$userName. "\r\n";
-        $body .= "Email: ".$userEmail. "\r\n";
-        $body .= "Message: ".$message. "\r\n";
-
-        mail($to,$body);
-
-        $message_sent = true;
-    }
-  }
-?>
 <html lang="en" dir="ltr">
 
 <head>
@@ -38,6 +15,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+
   <script src="https://kit.fontawesome.com/7faac037ac.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -339,8 +317,7 @@
           <p class="skills-list">ADOBE INDESIGN</p>
         </div>
         <div class="skills">
-          <p class="skills-list">MAC OS USER</p>
-        </div>
+          <p class="skills-list">MAC OS USER</p>        </div>
       </div>
 
       <!-- download cv -->
@@ -349,13 +326,12 @@
   </section>
 
   <!-- contact us -->
-    <h3></h3>
   <section id="contact">
     <div class="contact-area">
       <h1 class="medium-title">Hope you like it!</h1>
       <p>Want to collaborate? Or hire me? Let’s get in touch!</p>
 
-      <form action="index.html" method="POST" class="contact-form">
+      <form action="index.html" class="contact-form" onsubmit="sendEmail(); reset(); return false;">
         <input class="form-control form-control-lg contact-field" type="text" placeholder="Name*" name="name" tabindex="1" required>
         <input class="form-control form-control-lg contact-field" type="email" placeholder="Email Address*" name="email" tabindex="2" required>
         <textarea class="form-control form-control-lg contact-field" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message...*" name="message" tabindex="3" required></textarea>
@@ -369,7 +345,23 @@
     </footer>
   </section>
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    fuction sendEmail(){
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "beatrice.lasam@gmail.com",
+        Password : "Hellgirl2018",
+        To : 'beatrice.lasam@gmail.com',
+        From : document.getElementById('email').value,
+        Subject : "Website Inquiry",
+        Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
 
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
