@@ -203,10 +203,18 @@ p {
 #contact {
   text-align: center;
 }
+.contact-area h2 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 10px;
+}
 .contact-area {
   background-image: url(../images/contact-bg.jpg);
   background-size: cover;
   padding: 5% 10%;
+}
+.contact-details {
+  padding-top: 25px;
 }
 .contact-title {
   font-size: 45px;
